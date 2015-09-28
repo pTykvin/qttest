@@ -79,7 +79,7 @@ public class Main extends Application {
                     }
                 });
 
-                Duration duration = Duration.millis(1000);
+                Duration duration = Duration.millis(750 + i * 25);
                 final KeyFrame frame = new KeyFrame(duration, keyValueX, keyValueY);
                 keyFrames.add(frame);
             }

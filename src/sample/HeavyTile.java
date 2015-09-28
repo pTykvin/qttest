@@ -1,23 +1,12 @@
 package sample;
 
-import java.util.Optional;
-
-import org.apache.commons.lang.StringUtils;
-
 import javafx.beans.binding.ObjectBinding;
 import javafx.beans.binding.StringBinding;
-import javafx.beans.property.ObjectProperty;
-import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-import javafx.css.PseudoClass;
-import javafx.event.Event;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
 
@@ -45,7 +34,7 @@ public class HeavyTile extends StackPane {
 
         product.setVisible(true);
         name.setText(v_name);
-        image.setText(StringUtils.substring(v_name, 0, 2));
+        image.setText(v_name.substring(0, 2));
     }
 
 
