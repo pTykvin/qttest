@@ -40,7 +40,7 @@ public class Main extends Application {
 
         root.setOnMouseClicked(this::onClick);
 
-//        primaryStage.setFullScreen(true);
+        primaryStage.setFullScreen(true);
         primaryStage.setTitle("Hello World");
         final Scene scene = new Scene(root);
         scene.getStylesheets().add("sample/main.css");
