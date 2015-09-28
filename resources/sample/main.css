@@ -1,0 +1,49 @@
+.root {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);
+}
+.tile {
+  -fx-pref-width: 152;
+  -fx-pref-height: 152;
+}
+.tile > #product {
+  -fx-background-radius: 2;
+  -fx-border-radius: 2;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 0);
+  -fx-background-color: #fefbf7;
+}
+.tile > #product > #name {
+  -fx-alignment: top-left;
+  -fx-background-color: #c9efca;
+  -fx-min-height: 56;
+  -fx-text-fill: rgba(45, 52, 60, 0.87);
+  -fx-font-size: 15;
+  -fx-padding: 5 12;
+  -fx-background-radius: 0 0 2 2;
+  -fx-max-width: Infinity;
+}
+.tile > #product > .material_icon {
+  visibility: hidden;
+  -fx-background-insets: 5;
+  -fx-background-color: #A5A5A5;
+  -fx-shape: "M0, 45a45 , 45 0 1 , 0 90 , 0a45 , 45 0 1 , 0 -90 , 0";
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);
+}
+.tile > #product > .material_icon > .label {
+  -fx-shape: "M-23.9,48.9c-3.9-3.9-10.2-3.9-14.1,0s-3.9,10.2,0,14.1s10.2,3.9,14.1,0S-20,52.8-23.9,48.9z M-28.2,60.2l-2.8-2.8l-2.8,2.8l-1.4-1.4l2.8-2.8l-2.8-2.8l1.4-1.4l2.8,2.8l2.8-2.8l1.4,1.4l-2.8,2.8l2.8,2.8L-28.2,60.2z";
+  -fx-background-color: #fefbf7;
+  -fx-max-width: Infinity;
+  -fx-max-height: Infinity;
+}
+.tile > #product > .material_icon:pressed {
+  -fx-background-color: #fefbf7;
+}
+.tile > #product > .material_icon:pressed > .label {
+  -fx-background-color: #f3817f;
+}
+.tile > #product > #image {
+  -fx-font-size: 56;
+  -fx-text-fill: rgba(45, 52, 60, 0.54);
+}
+.tile:pressed > #product {
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);
+}
