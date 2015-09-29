@@ -37,5 +37,7 @@ public class HeavyTile extends StackPane {
         image.setText(v_name.substring(0, 2));
     }
 
-
+    public Label getName() {
+        return name;
+    }
 }
